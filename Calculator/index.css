@@ -1,0 +1,91 @@
+.container {
+  display: grid;
+  width: 500px;
+  grid: repeat(6, 100px) / repeat(4, 100px);
+  grid-template-areas:
+    "result result result result"
+    "ac ac del div"
+    "n7 n8 n9 mult"
+    "n4 n5 n6 sub"
+    "n1 n2 n3 sum"
+    "n0 n0 dot equal";
+}
+
+.calItem {
+  font-size: 20px;
+  border: 0.5px solid #000;
+  background-color: #b3b1b1;
+  place-items: center;
+  place-content: center;
+}
+
+.calSymbol,
+#equalSymbol {
+  background-color: rgb(239, 178, 62);
+  color: #ffffff;
+}
+/* .calItem.calSymbol:hover {
+  background-color: rgba(239, 177, 62, 0.54);
+} */
+.calItem:hover {
+  background-color: rgba(255, 255, 255, 0.688);
+}
+#result {
+  font-size: 20px;
+  place-items: center;
+  place-content: center;
+  grid-area: result;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #000;
+}
+#ac {
+  grid-area: ac;
+}
+#delete {
+  grid-area: del;
+}
+#divSymbol {
+  grid-area: div;
+}
+#mulSymbol {
+  grid-area: mult;
+}
+#subSymbol {
+  grid-area: sub;
+}
+#dot {
+  grid-area: dot;
+}
+#sumSymbol {
+  grid-area: sum;
+}
+#num0 {
+  grid-area: n0;
+}
+#num1 {
+  grid-area: n1;
+}
+#num2 {
+  grid-area: n2;
+}
+#num3 {
+  grid-area: n3;
+}
+#num4 {
+  grid-area: n4;
+}
+#num5 {
+  grid-area: n5;
+}
+#num6 {
+  grid-area: n6;
+}
+#num7 {
+  grid-area: n7;
+}
+#num8 {
+  grid-area: n8;
+}
+#num9 {
+  grid-area: n9;
+}
