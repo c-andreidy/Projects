@@ -1,3 +1,5 @@
+const popmotion = require("popmotion");
+
 const ball = document.querySelector(".ball");
 
 popmotion.animate({
@@ -7,7 +9,6 @@ popmotion.animate({
   repeatType: "mirror",
   type: "spring",
   onUpdate(upgrade) {
-    //  ball.getElementsByClassName.left = upgrade;
     ball.style.left = upgrade;
   },
 });
