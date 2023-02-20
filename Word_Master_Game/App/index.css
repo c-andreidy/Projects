@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+header {
+  display: flex;
+  align-items: flex-end;
+}
+h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 20px;
+  color: rgb(66, 66, 66);
+  margin: 0px;
+}
+.content-container {
+  margin: 0;
+  background-image: url(https://img.freepik.com/premium-vector/abstract-simple-dot-pattern-design-decoration-background_121035-35.jpg);
+  background-size: auto;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 550px;
+  height: 700px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 5px #dddddd;
+  outline: white;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.score-details {
+  height: 40px;
+  width: 400px;
+  border-bottom: 2px solid black;
+  margin-bottom: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scoretable {
+  display: flex;
+  width: 100%;
+  height: 550px;
+  box-sizing: content-box;
+
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+.attempt-section {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
+/* APLICARLE ESTA CLASE A LOS DIV QUE VAYA A CREAR EN JS
+  PORQUE CUANDO LOS PUEDA GENERAR SERAN BORRADOS DE HTML */
+
+.letter-container {
+  outline: 1px solid rgb(128, 128, 128);
+  height: 75px;
+  width: 75px;
+  color: rgb(66, 66, 66);
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.close {
+  background-color: goldenrod;
+  color: #fff;
+}
+.wrong {
+  background-color: #888;
+  color: #fff;
+}
+.correct {
+  background-color: green;
+  color: #fff;
+}
+.invalid {
+  animation: flash 2s;
+}
+@keyframes flash {
+  100%,
+  5% {
+    outline: 1px solid rgb(255, 0, 0);
+  }
+
+  100% {
+    outline: 1px solid rgb(204, 204, 204);
+  }
+}
+@keyframes rainbow {
+  100%,
+  0% {
+    color: rgb(255, 0, 0);
+  }
+  8% {
+    color: rgb(255, 127, 0);
+  }
+  16% {
+    color: rgb(255, 255, 0);
+  }
+  25% {
+    color: rgb(127, 255, 0);
+  }
+  33% {
+    color: rgb(0, 255, 0);
+  }
+  41% {
+    color: rgb(0, 255, 127);
+  }
+  50% {
+    color: rgb(0, 255, 255);
+  }
+  58% {
+    color: rgb(0, 127, 255);
+  }
+  66% {
+    color: rgb(0, 0, 255);
+  }
+  75% {
+    color: rgb(127, 0, 255);
+  }
+  83% {
+    color: rgb(255, 0, 255);
+  }
+  91% {
+    color: rgb(255, 0, 127);
+  }
+}
+
+.winner {
+  animation: rainbow 4s infinite linear;
+}
