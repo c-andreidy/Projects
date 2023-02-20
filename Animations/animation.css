@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  min-height: 400px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #0074d9;
+}
