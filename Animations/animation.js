@@ -5,8 +5,8 @@ popmotion.animate({
   to: "100px",
   repeat: Infinity,
   repeatType: "mirror",
-  type: "sprint",
-  onupgrate(upgrade) {
+  type: "spring",
+  onUpdate(upgrade) {
     //  ball.getElementsByClassName.left = upgrade;
     ball.style.left = upgrade;
   },
